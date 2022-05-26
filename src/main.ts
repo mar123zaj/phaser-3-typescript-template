@@ -2,7 +2,7 @@ import Phaser from 'phaser'
 
 import HelloWorldScene from './scenes/HelloWorldScene'
 
-const config = {
+export default new Phaser.Game({
 	type: Phaser.AUTO,
 	width: window.innerWidth,
 	height: window.innerHeight,
@@ -13,6 +13,4 @@ const config = {
 		}
 	},
 	scene: [HelloWorldScene]
-}
-
-export default new Phaser.Game(config)
+})
